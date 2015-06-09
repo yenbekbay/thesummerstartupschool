@@ -99,8 +99,12 @@ $(function(){
           } else {
             if (parseInt(response.result) > 0) {
               checkbox.prop('disabled', true);
-              checkbox.prop('checked', true);
+              checkbox.prop('checked', false);
               checkbox.next('span').addClass('disabled');
+            } else {
+              checkbox.prop('disabled', false);
+              checkbox.prop('checked', false);
+              checkbox.next('span').removeClass('disabled');
             }
           }
           i++;
