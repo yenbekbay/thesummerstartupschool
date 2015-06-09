@@ -41,7 +41,7 @@ $(function(){
     { value: 'Zholdasbayev Ilyas' },
     { value: 'Zhuginissova Karlygash' },
     { value: 'Zigangirov Anatolij' },
-    { value: 'Juliet Lozovaya'}
+    { value: 'Juliet Lozovaya' }
   ];
 
   var date = new Date();
