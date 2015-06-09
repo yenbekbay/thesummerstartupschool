@@ -140,7 +140,7 @@ $(function(){
         });
       }
     });
-    $('#label').html("Success. Added points to " + $('#label').text() + ".");
+    $('#label').html("Thank you, " + $('#label').text() + ". Your points have been submitted.");
     $('#form').hide();
     event.preventDefault();
   });
