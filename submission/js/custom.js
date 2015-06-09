@@ -135,7 +135,7 @@ $(function(){
         });
       }
     });
-    $('#label').html("Success. Added one point to " + $('#label').text() + ".");
+    $('#label').html("Success. Added points to " + $('#label').text() + ".");
     $('#form').hide();
     event.preventDefault();
   });
