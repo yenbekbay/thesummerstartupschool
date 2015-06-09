@@ -116,10 +116,12 @@ $(function(){
     $('#form input[type=checkbox]').each(function() {
       if (this.checked) {
         var worth = 1;
-        if (this.name == 'silver') {
+        if (this.name == 'bronze') {
           worth = 2;
-        } else if (this.name == 'gold') {
+        } else if (this.name == 'silver') {
           worth = 3;
+        } else if (this.name == 'gold') {
+          worth = 4;
         }
         client.addEvent("points", {
           point: {
