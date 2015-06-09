@@ -18,7 +18,8 @@ Keen.ready(function() {
     chartOptions: {
       chartArea: {
         left: "20%",
-        width: "77%"
+        width: "77%",
+        height: "100%"
       },
       isStacked: true
     }
