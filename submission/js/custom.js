@@ -41,7 +41,8 @@ $(function(){
     { value: 'Zholdasbayev Ilyas' },
     { value: 'Zhuginissova Karlygash' },
     { value: 'Zigangirov Anatolij' },
-    { value: 'Juliet Lozovaya' }
+    { value: 'Juliet Lozovaya' },
+    { value: 'Mukhanov Daniyar'}
   ];
 
   var date = new Date();
@@ -99,7 +100,7 @@ $(function(){
           } else {
             if (parseInt(response.result) > 0) {
               checkbox.prop('disabled', true);
-              checkbox.prop('checked', false);
+              checkbox.prop('checked', true);
               checkbox.next('span').addClass('disabled');
             } else {
               checkbox.prop('disabled', false);
