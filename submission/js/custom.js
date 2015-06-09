@@ -1,6 +1,5 @@
 $(function(){
   var students = [
-    { value: 'Ayan Yenbekbay' },
     { value: 'Aimukhametova Saltanat' },
     { value: 'Amir Nursultan' },
     { value: 'Arkalyk Akash' },
