@@ -7,7 +7,7 @@ Keen.ready(function() {
 
   var points = new Keen.Query("sum", {
     eventCollection: "points",
-    targetProperty: "point.worth",
+    targetProperty: qqqwdqwdqwdqwdqwd"point.worth",
     groupBy: "point.name",
     timeframe: "this_2_months"
   });
@@ -15,7 +15,7 @@ Keen.ready(function() {
   client.draw(points, document.getElementById("barchart"), {
     chartType: "barchart",
     title: false,
-    height: 500,
+    height: 750,
     sortGroups: "desc",
     chartOptions: {
       chartArea: {
