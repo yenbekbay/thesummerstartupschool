@@ -7,7 +7,7 @@ Keen.ready(function() {
 
   var points = new Keen.Query("sum", {
     eventCollection: "points",
-    targetProperty: qqqwdqwdqwdqwdqwd"point.worth",
+    targetProperty: "point.worth",
     groupBy: "point.name",
     timeframe: "this_2_months"
   });
