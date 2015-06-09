@@ -19,8 +19,8 @@ Keen.ready(function() {
     sortGroups: "desc",
     chartOptions: {
       chartArea: {
-        left: "20%",
-        width: "77%",
+        left: "25%",
+        width: "72%",
         height: "100%"
       },
       isStacked: true

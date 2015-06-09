@@ -30,7 +30,7 @@ $(function(){
     { value: 'Mekebayeva Diana' },
     { value: 'Mynzhassarov Ilyas' },
     { value: 'Myrzagalym Sanzhar' },
-    { value: 'Park Tatyana' },
+    { value: 'Pak Tatyana' },
     { value: 'Pernebayeva Didara' },
     { value: 'Segisbayev Kemal' },
     { value: 'Serikov Anuar' },
