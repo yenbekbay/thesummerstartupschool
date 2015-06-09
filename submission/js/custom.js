@@ -40,7 +40,8 @@ $(function(){
     { value: 'Yesenzhanov Hakim' },
     { value: 'Zholdasbayev Ilyas' },
     { value: 'Zhuginissova Karlygash' },
-    { value: 'Zigangirov Anatolij' }
+    { value: 'Zigangirov Anatolij' },
+    { value: 'Juliet Lozovaya'}
   ];
 
   var date = new Date();
