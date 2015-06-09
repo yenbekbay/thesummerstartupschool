@@ -14,7 +14,9 @@ Keen.ready(function() {
 
   client.draw(points, document.getElementById("barchart"), {
     chartType: "barchart",
-    title: "Total points",
+    title: false,
+    height: 500,
+    sortGroups: "desc",
     chartOptions: {
       chartArea: {
         left: "20%",
