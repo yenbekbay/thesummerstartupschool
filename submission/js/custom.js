@@ -123,7 +123,7 @@ $(function(){
       if (this.checked) {
         var worth = 1;
         if (this.name == 'bronze') {
-          worth = 1;
+          worth = 2;
         } else if (this.name == 'silver') {
           worth = 3;
         } else if (this.name == 'gold') {
