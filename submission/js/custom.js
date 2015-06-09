@@ -100,7 +100,7 @@ $(function(){
           } else {
             if (parseInt(response.result) > 0) {
               checkbox.prop('disabled', true);
-              checkbox.prop('checked', true);
+              checkbox.prop('checked', false);
               checkbox.next('span').addClass('disabled');
             } else {
               checkbox.prop('disabled', false);
@@ -123,7 +123,7 @@ $(function(){
       if (this.checked) {
         var worth = 1;
         if (this.name == 'bronze') {
-          worth = 2;
+          worth = 1;
         } else if (this.name == 'silver') {
           worth = 3;
         } else if (this.name == 'gold') {
