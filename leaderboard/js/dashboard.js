@@ -9,7 +9,7 @@ Keen.ready(function() {
     eventCollection: "points",
     targetProperty: "point.worth",
     groupBy: "point.name",
-    timeframe: "this_2_months"
+    timeframe: "today"
   });
 
   client.draw(points, document.getElementById("barchart"), {
