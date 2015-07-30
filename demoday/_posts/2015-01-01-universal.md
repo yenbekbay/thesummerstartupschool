@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "Universal"
+title: "universal"
 creators:
-  - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+  - name: "Аркалык Акаш"
+    bio: "Nazarbayev University ‘2017, School of Science and Technology, Computer Science. 3-е место, InnCoding Hackathon, Астана, 2014. Создатель игр Running Newton и Spacecon.  "
+    image: "universal.jpg"
 appStoreUrl:
 website:
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+Доставка продуктов кофейни Two Bros Bakery

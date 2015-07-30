@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "StartCode.It"
+title: "startcodeit"
 creators:
-  - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+  - name: "Сапар Джумабеков"
+    bio: "Университет имени Сулеймана Демиреля, Информационные системы. 3-ее место, HackDay. Автор сайтов entstudy.kz, GOsite.kz, sravni.me."
+    image: "startcodeit.jpg"
 appStoreUrl:
-website:
+website:"StartCode.it"
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+StartCode.it - самый легкий способ обучению веб-программированию (HTML, CSS, JavaScript) прямо в твоем кармане. Иными словами Treehouse для русскоязычной аудитории. 

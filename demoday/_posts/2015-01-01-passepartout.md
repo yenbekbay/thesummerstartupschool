@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "Passepartout"
+title: "passepartout"
 creators:
-  - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+  - name: "Диана Мекебаева"
+    bio: "Назарбаев Интеллектуальная Школа МБ Астана. 16 лет. "
+    image: "passepartout.jpg"
 appStoreUrl:
-website:
+website:"passepartout.tk"
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+Passepartout - виртуальный способ путешествовать по самым интересным уголкам мира через короткие видео

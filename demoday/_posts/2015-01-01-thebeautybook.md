@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "The Beauty Book"
+title: "thebeautybook"
 creators:
   - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+    bio: "KIMEP, Accounting. Главный редактор журнала KIMEP PIE. "
+    image: "thebeautybook.jpg"
 appStoreUrl:
-website:
+website:"http://thebeautybookapp.com"
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+BeautyBook - бронируйте услуги в любом салоне красоты и спа на территории Алматы
