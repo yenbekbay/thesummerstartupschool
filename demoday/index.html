@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-    <div class="container app-content">
+    <div class="container apps">
       <div class="row">
         {% for app in site.posts %}
           <div class="col-sm-6">
@@ -32,7 +32,7 @@ layout: base
               {% for creator in app.creators %}
               <div class="row app-creator panel-body">
                 <div class="app-creator-image col-xs-3">
-                  <img src="{{ site.baseurl }}/img/creators/{{ creator.image }}.jpg" alt="{{ creator.name }}" class="img-circle">
+                  <img src="{{ site.baseurl }}/img/creators/{{ creator.image }}" alt="{{ creator.name }}" class="img-circle">
                 </div>
                 <div class="col-xs-9">
                   {% if creator.name %}
@@ -45,22 +45,6 @@ layout: base
                       {{ creator.bio }}
                     </p>
                   {% endif %}
-                <div class="row">
-                  <div class="app-creator-image col-xs-4">
-                    <img src="{{ site.baseurl }}/img/creators/{{ app.title }}.jpg" alt="{{ app.creatorName }}" class="img-circle">
-                  </div>
-                  <div class="col-xs-8">
-                    {% if app.creatorName %}
-                      <h3>
-                        {{ app.creatorName }}
-                      </h3>
-                    {% endif %}
-                    {% if app.creatorBio %}
-                      <p class="app-creator-bio">
-                        {{ app.creatorBio }}
-                      </p>
-                    {% endif %}
-                  </div>
                 </div>
               </div>
               {% endfor %}

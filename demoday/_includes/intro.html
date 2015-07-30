@@ -1,10 +1,10 @@
 <script type="text/template" id="countdown-timer-template">
-<div class="time <%= label %>">
+<div class="time <%= interval %>">
   <span class="count curr top"><%= curr %></span>
   <span class="count next top"><%= next %></span>
   <span class="count next bottom"><%= next %></span>
   <span class="count curr bottom"><%= curr %></span>
-  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+  <span class="label"><%= label %></span>
 </div>
 </script>
 
