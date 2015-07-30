@@ -6,7 +6,7 @@ $container-large-desktop: 970px;
 $font-family-base: "PT Sans", sans-serif;
 $headings-font-weight: 400;
 
-$font-size-base: 14px;
+$font-size-base: 16px;
 $font-size-h1: floor(($font-size-base * 2.5));
 $font-size-h2: floor(($font-size-base * 1.6));
 $font-size-h3: floor(($font-size-base * 1.4));
@@ -94,9 +94,6 @@ a {
   letter-spacing: 1px;
   text-align: center;
 }
-.panel-body {
-  overflow: hidden;
-}
 .btn {
   font-size: $font-size-base;
 }
@@ -108,6 +105,9 @@ a {
   STYLES
 ———————————–———————————–*/
 
+.panel {
+  overflow: hidden;
+}
 .app-content {
   padding-top: $space-md * 2;
   padding-bottom: $space-md;
@@ -116,19 +116,31 @@ a {
     margin: 0;
   }
 }
-.app-icon-image-wrapper {
-  margin: -15px;
-  height: 150px;
+.app-info {
+  margin: 0;
 }
-.app-icon-image{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.app-image {
+  padding-bottom: 15px;
 }
-.app-icon-image img  {
-  width: 20%;
+.app-image > img  {
   height: auto;
-  margin-left: 40%;
+}
+.app-image .app-store-link {
+  display: block;
+  width: 133px;
+  height: 38px;
+  margin: auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+}
+.app-image .app-store-link img {
+  height: 100%;
+  width: 100%;
+}
+.app-description a {
+  text-decoration: underline;
 }
 .app-creator-image img {
   width: 100%;
@@ -139,12 +151,40 @@ a {
   color: $color-sub;
   font-size: $font-size-base;
 }
+@media (min-width: $screen-xs-max+1) {
+  .app-info {
+    height: 200px;
+  }
+  .app-image, .app-description {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .app-image > img  {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 @media (max-width: $screen-xs-max) {
   .app-content {
     padding-top: $space-md;
   }
-  .app-pic {
-    float: none;
-    margin-bottom: $space-sm;
+  .app-info {
+    min-height: 200px;
+  }
+  .app-description {
+    padding: 0 20px 20px 20px;
+  }
+  .app-image > img  {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .app-description h1 {
+    font-size: $font-size-h1*1.4;
+    text-align: center;
+  }
+  .app-description p, .app-description .app-website {
+    font-size: $font-size-base*1.4;
+    text-align: center;
   }
 }
