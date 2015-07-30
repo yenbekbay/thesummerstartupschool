@@ -1,0 +1,28 @@
+<script type="text/template" id="countdown-timer-template">
+<div class="time <%= label %>">
+  <span class="count curr top"><%= curr %></span>
+  <span class="count next top"><%= next %></span>
+  <span class="count next bottom"><%= next %></span>
+  <span class="count curr bottom"><%= curr %></span>
+  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+</div>
+</script>
+
+<div class="container-fluid intro-panel">
+    <div class="row">
+      <p class="text-center intro-text">
+        DEMO DAY
+      </p>
+      <p class="text-center intro-subtitle">
+        У каждого начала должен быть конец
+      </p>
+    </div>
+
+    <div class="countdown-timer">
+        <div class="countdown-container" id="countdown-timer"></div>
+    </div>
+
+    <div class="container rsvp-button-container center-block">
+      <a href="https://www.eventbrite.com/e/thesummerstartupschoolcom-demo-day-tickets-17965175323" class="btn btn-lg btn-success rsvp-button" role="button">Принять участие</a>
+    </div>
+</div>
