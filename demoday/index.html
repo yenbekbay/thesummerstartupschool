@@ -1,41 +1,53 @@
 ---
 layout: base
 ---
-    <div class="container app-content">
+    <div class="container apps">
       <div class="row">
         {% for app in site.posts %}
           <div class="col-sm-6">
             <div class="panel">
-              <div class="panel-body">
-                <div class="row app-icon-image-wrapper">
-                  <div class="app-icon-image">
-                    <img src="{{ site.baseurl }}/img/apps/{{ app.title }}.png" alt="{{ app.name }}" data-adaptive-background='1'>
-                  </div>
+              <div class="row app-info">
+                <div class="app-image col-sm-5">
+                  <img src="{{ site.baseurl }}/img/apps/{{ app.title }}.png" alt="{{ app.name }}" data-adaptive-background='1'>
+                  {% if app.appStoreUrl %}
+                    <a class="app-store-link" href="{{ app.appStoreUrl }}"><img src="{{ site.baseurl }}/img/app-store.png"></a>
+                  {% endif %}
+                </div>
+                <div class="app-description col-sm-7">
                   <h1>
                     {{ app.name }}
                   </h1>
-                  <!-- <div class="col-xs-8">
+                  <p>
                     {{ app.content }}
-                  </div> -->
-                </div>
-                <div class="row">
-                  <div class="app-creator-image col-xs-4">
-                    <img src="{{ site.baseurl }}/img/creators/{{ app.title }}.jpg" alt="{{ app.creatorName }}" class="img-circle">
-                  </div>
-                  <div class="col-xs-8">
-                    {% if app.creatorName %}
-                      <h3>
-                        {{ app.creatorName }}
-                      </h3>
-                    {% endif %}
-                    {% if app.creatorBio %}
-                      <p class="app-creator-bio">
-                        {{ app.creatorBio }}
-                      </p>
-                    {% endif %}
-                  </div>
+                  </p>
+                  {% if app.website %}
+                    <div class="app-website">
+                      <a href="http://{{ app.website }}">
+                        {{ app.website }}
+                      </a>
+                    </div>
+                  {% endif %}
                 </div>
               </div>
+              {% for creator in app.creators %}
+              <div class="row app-creator panel-body">
+                <div class="app-creator-image col-xs-3">
+                  <img src="{{ site.baseurl }}/img/creators/{{ creator.image }}" alt="{{ creator.name }}" class="img-circle">
+                </div>
+                <div class="col-xs-9">
+                  {% if creator.name %}
+                    <h3>
+                      {{ creator.name }}
+                    </h3>
+                  {% endif %}
+                  {% if creator.bio %}
+                    <p class="app-creator-bio">
+                      {{ creator.bio }}
+                    </p>
+                  {% endif %}
+                </div>
+              </div>
+              {% endfor %}
             </div>
           </div>
         {% endfor %}
