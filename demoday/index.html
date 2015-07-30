@@ -1,0 +1,40 @@
+---
+layout: base
+---
+    <div class="container app-content">
+      <div class="row">
+        {% for app in site.posts %}
+          <div class="col-sm-6">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="app-image col-xs-4">
+                    <img src="{{ site.baseurl }}/img/apps/{{ app.title }}.png" alt="{{ app.name }}" >
+                  </div>
+                  <div class="col-xs-8">
+                    {{ app.content }}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="app-creator-image col-xs-4">
+                    <img src="{{ site.baseurl }}/img/creators/{{ app.title }}.jpg" alt="{{ app.creatorName }}" class="img-circle">
+                  </div>
+                  <div class="col-xs-8">
+                    {% if app.creatorName %}
+                      <h3>
+                        {{ app.creatorName }}
+                      </h3>
+                    {% endif %}
+                    {% if app.creatorBio %}
+                      <p class="app-creator-bio">
+                        {{ app.creatorBio }}
+                      </p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>

@@ -1,0 +1,16 @@
+url: "http://thesummerstartupschool.com"
+title: "Demo Day в Летней Стартап Школе"
+description: ""
+
+markdown: kramdown
+highlighter: pygments
+
+permalink: pretty
+relative_permalinks: true
+
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
