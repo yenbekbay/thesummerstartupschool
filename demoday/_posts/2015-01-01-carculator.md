@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "Carculator"
+title: "carculator"
 creators:
-  - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+  - name: "Ахмед Аргымбаев"
+    bio: "Выпускник Bachelor of Arts in Journalism, KIMEP. Журналист, Idea-Lab.kz."
+    image: "carculator.jpg"
 appStoreUrl:
 website:
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+Carculator - найдите среднюю цену своего автомобиля на рынке.

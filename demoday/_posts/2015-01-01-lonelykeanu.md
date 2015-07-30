@@ -1,12 +1,12 @@
 ---
-name: "НАН"
-title: "nan"
+name: "LonelyKeanu"
+title: "lonelykeanu"
 creators:
-  - name: "Даурен Макул"
-    bio: "МУИТ ИС ‘2017"
-    image: "nan.jpg"
+  - name: "Даулет Кенжетаев"
+    bio: "Nazarbayev University ‘2017, School of Science and Technology, Computer Science. Победа на InnCoding Hackathon, Астана, 2014. Участник игрового хакатона Ludum Dare. КТЛ  Жезказган ‘2012."
+    image: "lonelykeanu.jpg"
 appStoreUrl:
-website:
+website: "lonelykeanu.tk"
 ---
 
-НАН - создавайте списки покупок и делитесь ими с близкими, друзьями и коллегами.
+LonelyKeanu - выражай свои эмоции, отправляя картинки знаменитостей через WhatsApp.
