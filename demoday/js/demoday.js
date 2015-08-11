@@ -1,14 +1,23 @@
 ;(function(window, document, $){
   $(document).ready(function(){
     $('.app-image img').on('ab-color-found', function(e, data){
-      $(this).parents('.app-info').css({ background: data.color });
-      var contrastingColor = getContrastingColor(data.color);
-      $('.app-image .app-store-link').css({ color: 'white' });
-      $('.app-description h1').css({ color: contrastingColor });
-      $('.app-description p').css({ color: contrastingColor });
-      $('.app-description a').css({ color: contrastingColor });
+      var color = data.color;
+      if (color == "rgb()") {
+        color = "rgb(204,204,204)";
+      }
+      $(this).parents('.app-info').css({ background: color });
+      var contrastingColor = getContrastingColor(color.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/));
+      $(this).parents('.app-info').find('.app-image .app-store-link').css({ color: contrastingColor });
+      $(this).parents('.app-info').find('.app-description h1').css({ color: contrastingColor });
+      $(this).parents('.app-info').find('.app-description p').css({ color: contrastingColor });
+      $(this).parents('.app-info').find('.app-description a').css({ color: contrastingColor });
     });
     $.adaptiveBackground.run();
+
+    $('.app-grid').masonry({
+      itemSelector: '.app-card',
+      layoutMode: 'fitRows'
+    });
 
     var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
       template = _.template($('#countdown-timer-template').html()),
@@ -45,7 +54,7 @@
       }));
     });
     // Starts the countdown
-    $timer.countdown('2015/08/04', function(event) {
+    $timer.countdown('2015/08/04 10:00:00', function(event) {
       var newDate = event.strftime('%w:%d:%H:%M:%S'),
         data;
       if (newDate !== nextDate) {
@@ -76,12 +85,9 @@
   });
 })(window, document, jQuery)
 
-function getContrastingColor(hexcolor){
-	var r = parseInt(hexcolor.substr(0,2),16);
-	var g = parseInt(hexcolor.substr(2,2),16);
-	var b = parseInt(hexcolor.substr(4,2),16);
-	var yiq = ((r*299)+(g*587)+(b*114))/1000;
-	return (yiq >= 128) ? 'black' : 'white';
+function getContrastingColor(rgb) {
+  var yiq = ((rgb[1]*299)+(rgb[2]*587)+(rgb[3]*114))/1000;
+	return (yiq >= 160) ? 'black' : 'white';
 }
 
 function getEndingForLabel(label, number) {

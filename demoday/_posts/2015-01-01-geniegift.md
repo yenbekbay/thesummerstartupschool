@@ -5,7 +5,7 @@ creators:
   - name: "Татьяна Пак"
     bio: "РСФМСШИ им. О.Жаутыкова ‘2016. Серебро на городской олимпиаде по математике.
 Похвальная грамота на Республиканской олимпиаде"
-    image: "geniegift.jpg"
+    image: "geniegift.png"
 appStoreUrl:
 website: "thegeniegift.com"
 ---

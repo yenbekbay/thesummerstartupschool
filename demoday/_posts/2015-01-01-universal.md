@@ -1,5 +1,5 @@
 ---
-name: "Universal"
+name: "Universal Food Delivery"
 title: "universal"
 creators:
   - name: "Аркалык Акаш"
@@ -9,4 +9,4 @@ appStoreUrl:
 website:
 ---
 
-Доставка продуктов кофейни Two Bros Bakery.
+Universal Food Delivery - приложение для кофеен и ресторанов, которым нужен мобильный каталог меню “под ключ” с возможностью сделать заказ с доставкой на дом.

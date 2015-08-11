@@ -1,4 +1,5 @@
 url: "http://thesummerstartupschool.com"
+baseurl: "/demoday"
 title: "Demo Day в Летней Стартап Школе"
 description: ""
 
@@ -8,9 +9,22 @@ highlighter: pygments
 permalink: pretty
 relative_permalinks: true
 
+sass:
+  style: compressed
+
 exclude:
   - "README.md"
-  - "CHANGELOG.md"
-  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
+
+gems: [jekyll-press]
+
+mini_magick:
+  apps:
+    source: img/apps/original
+    destination: img/apps/min
+    resize: "500x500"
+  creators:
+    source: img/creators/original
+    destination: img/creators/min
+    resize: "200x200"

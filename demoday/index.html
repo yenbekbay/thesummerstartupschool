@@ -2,9 +2,10 @@
 layout: base
 ---
     <div class="container apps">
-      <div class="row">
-        {% for app in site.posts %}
-          <div class="col-sm-6">
+      <div class="app-grid">
+        {% assign apps = site.posts | sort: 'name' %}
+        {% for app in apps %}
+          <div class="app-card">
             <div class="panel">
               <div class="row app-info">
                 <div class="app-image col-sm-5">

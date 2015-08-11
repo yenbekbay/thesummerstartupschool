@@ -2,7 +2,7 @@
 name: "Осьминог Пауль"
 title: "osminogpaul"
 creators:
-  - name: "Даурен Макул"
+  - name: "Данияр Муханов"
     bio: "Cardiff University ‘16. Suleyman Demirel University ‘15, Вычислительная Техника. Работал над Android приложениями “Асыл Арна”, Adbird, PIT."
     image: "osminogpaul.jpg"
 appStoreUrl:
